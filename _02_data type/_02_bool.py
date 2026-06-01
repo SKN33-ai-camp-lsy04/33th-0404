@@ -46,3 +46,5 @@ result = score >= 60
 # print( "합격 여부 : ", result)
 
 print ("합격 여부 : ", '합격' if result == True else '불합격')
+print('---str.replace() ---')
+today = '2026-06-01'
