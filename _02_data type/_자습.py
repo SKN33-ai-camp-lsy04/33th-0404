@@ -1,7 +1,7 @@
 print ("""
 === sanguinary rules of despotic society ===
 """)
-s1 = "why it could be possible?"
+s1 = "why it could be impossible?"
 s2 = "Because it hasn't so big problem that people want to escape from the present state"
 s3 = "It is difficult to change the previous structure."
 s4 = "It requires the many brave to decide the loss of our history at the some point of view"
