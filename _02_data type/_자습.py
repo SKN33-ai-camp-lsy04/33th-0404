@@ -20,8 +20,3 @@ C2 = input("""식욕이 줄었나요?
 : 맞으면 True, 틀리면 Falsse를 입력하세요 """)
 
 print ( "진단결과 : 우울증" if C1 >= 14 and C2 == True else "진단결과 : 이상없음")
-
-list = [
-    ['mmHg', 140]
-    []
-]
