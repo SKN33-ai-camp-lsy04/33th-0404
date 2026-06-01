@@ -19,7 +19,9 @@ C1 = int(input("기간을 입력하세요: "))
 C2 = input("""식욕이 줄었나요?
 : 맞으면 True, 틀리면 Falsse를 입력하세요 """)
 
-print ("진단결과 : 우울증" if C1 >= 14 and C2 == "True")
-print ("진단결과 : 이상없음" if C1 < 14 or C2 == "False"")
+print ( "진단결과 : 우울증" if C1 >= 14 and C2 == True else "진단결과 : 이상없음")
 
-print(today, today.replace(old : '-', new:  '/'))
+list = [
+    ['mmHg', 140]
+    []
+]

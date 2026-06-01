@@ -76,3 +76,63 @@ students = [
 ]
 print("students: ", students)
 print(students[0][0])
+print(students[1][1])
+print(students[1])
+print(len(students))
+print(len(students[2]))
+
+#str.split(구분자)
+# -str을 구분자를 기준으로 나눠서 list 형태로 반환
+data = "홍길동, 20살, 서울시, 서초구" # csv(Comma Separated Value)
+data_ =  data.split(',')
+print("data_: ", data_, type(data_))
+# list 가 됨
+
+name = data_[0]
+age = data_[1]
+addr1 = data_[2]
+addr2 = data_[3]
+print(name, age, addr1, addr2)
+
+# list 슬라이싱 (str 슬라이싱과 방법 동일)
+print("--- list slicing ---")
+texts = ['lion', 'tiger', 'rabbit', 'horse']
+
+# ['lion', 'tiger]
+print(texts [:2])
+
+#['tiger', 'rabbit']
+print(texts [1:3])
+
+#['lion', 'rabbit']
+print (texts [0:4:2])  # [0::2]
+
+# ['rabbit', 'horse]
+print (texts [2:4]) # 끝자리 숫자는 아무거나, [2:]
+
+# slicing 을 이용한 list 값 변경
+print (texts)
+texts[:2] = ["aaa", "bbb"]
+print(texts)
+# 0번, 1번 자리를 아예 교체함
+
+# list끼리 더하기(+) 연산
+print("--- list 더하기 연산 ---")
+a = [10, 20]
+b = [30, 40]
+a = a+b
+print(a) #[10, 20, 30, 40]
+
+b= b + a
+print(b) # [30, 40, 10, 20, 30, 40]
+
+# list 순회 (순차 접근, 순차 반복)
+# - iterable 특징을 가지는 자료형만 가능
+print("--- list 순회 ---")
+lst = ['a', 'b', 'c']
+
+# list 요소 순회 : 요소에 하나씩 하나씩 접근한다
+for v in lst:
+    print(v)
+for index, v in enumerate(lst):
+    print(f'lst[{index}] : {v}')
