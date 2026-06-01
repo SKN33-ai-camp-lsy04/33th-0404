@@ -136,3 +136,52 @@ for v in lst:
     print(v)
 for index, v in enumerate(lst):
     print(f'lst[{index}] : {v}')
+
+# list api
+
+# list.count(값) : list 내에 같은 값이 몇 개 있는가?
+print("--- list.count(값) ---")
+fruits = ["apple", "banana", "cherry", "apple", "melon"]
+
+print('fruits.count("apple"): ', fruits.count("apple"))
+print('fruits.count("kiwi"): ', fruits.count("kiwi"))
+
+# sort : 정렬하다
+# list.sort() : 원본 리스트 내에서 정렬(in-place)
+# sorted(list) : 정렬된 새 리스트를 반환(not-in-place)
+# -> 원본 데이터가 별도로 유지
+
+print("--- list.sort() : 원본 변경 ---")
+nums = [100, 30, 50, 20, 70]
+print("nums: ", nums)
+
+nums.sort() # 정렬 수행
+print("오름차순 정렬된 nums: ", nums)
+
+nums.sort(reverse=True) #정렬 뒤집기 == 내림차순
+
+# key 속성 -> 정렬 기준 함수
+print("--- key 속성 -> 정렬 기준 함수 ---")
+print("fruits: ", fruits)
+
+# len 함수를 정렬 기준으로 설정
+print("--- key 속성-> 정렬 기준 함수 ---")
+fruits.append("kiwi")
+print("fruits: ", fruits)
+
+
+# sorted(list) : 원본 유지 정렬
+
+# list unpacking (묶음 풀기)
+# - list == 변수의 묶음
+numbers = [10, 20, 30]
+a, b, c = numbers
+
+# d = 0번 인덱스 요소 (10)
+# *e = 나머지 요소 (20, 30) --> [20, 30] 리스트 형태로
+d, *e = numbers
+print(d,e)
+
+number = [10, 20, 30, 40, 50]
+a, *b, c = numbers
+# a= 10, b= [20, 30, 40], c= 50
